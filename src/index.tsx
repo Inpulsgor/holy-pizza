@@ -5,9 +5,11 @@ import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "common/styles/global";
 import { theme } from "common/styles/theme";
+import { Provider } from "react-redux";
+// import { PersistGate } from "redux-persist/integration/react";
+import store from "./redux/store";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
-import "./index.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -15,14 +17,18 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <HelmetProvider>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </ThemeProvider>
-    </HelmetProvider>
+    <Provider store={store}>
+      {/* <PersistGate loading={null} persistor={persistor}> */}
+      <HelmetProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ThemeProvider>
+      </HelmetProvider>
+      {/* </PersistGate> */}
+    </Provider>
   </React.StrictMode>,
 );
 

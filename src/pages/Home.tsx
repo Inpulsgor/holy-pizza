@@ -5,7 +5,7 @@ const Home: FC = () => {
   return (
     <>
       <Helmet>
-        <title>Home</title>
+        <title>Holy Pizza</title>
         <meta name="description" content="home" />
       </Helmet>
 
