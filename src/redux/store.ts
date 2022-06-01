@@ -8,7 +8,7 @@ import middleware from "./middleware";
 const store = configureStore({
   reducer: rootReducer,
   middleware,
-  devTools: process.env.NODE_ENV === "development", // enabled devTools only for development mode
+  devTools: process.env.NODE_ENV === "development",
 });
 
 export type AppState = ReturnType<typeof store.getState>;

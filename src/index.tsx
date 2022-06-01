@@ -6,8 +6,8 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "common/styles/global";
 import { theme } from "common/styles/theme";
 import { Provider } from "react-redux";
-// import { PersistGate } from "redux-persist/integration/react";
-import store from "./redux/store";
+import { PersistGate } from "redux-persist/integration/react";
+import store, { persistor } from "./redux/store";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 
@@ -18,16 +18,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}> */}
-      <HelmetProvider>
-        <ThemeProvider theme={theme}>
-          <GlobalStyle />
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </ThemeProvider>
-      </HelmetProvider>
-      {/* </PersistGate> */}
+      <PersistGate loading={null} persistor={persistor}>
+        <HelmetProvider>
+          <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <BrowserRouter>
+              <App />
+            </BrowserRouter>
+          </ThemeProvider>
+        </HelmetProvider>
+      </PersistGate>
     </Provider>
   </React.StrictMode>,
 );
