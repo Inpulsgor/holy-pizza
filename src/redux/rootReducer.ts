@@ -3,6 +3,7 @@ import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 import loaderSlice from "entities/loader/redux/loaderSlice";
+import langSlice from "entities/lang/redux/langSlice";
 import pizzaSlice from "entities/pizza/redux/pizzaSlice";
 import cartSlice from "entities/cart/redux/cartSlice";
 
@@ -14,6 +15,7 @@ const authPersistConfig = {
 
 const rootReducer = combineReducers({
   [loaderSlice.name]: loaderSlice.reducer,
+  [langSlice.name]: langSlice.reducer,
   [pizzaSlice.name]: pizzaSlice.reducer,
   [cartSlice.name]: persistReducer(authPersistConfig, cartSlice.reducer),
 });

@@ -24,16 +24,14 @@ const AppWrapper = styled.div`
   }
 `;
 
-const AppLayout: FC = () => {
-  return (
-    <AppWrapper>
-      <AppBar />
-      <AppBody>
-        <Outlet />
-      </AppBody>
-      <AppBasement />
-    </AppWrapper>
-  );
-};
+const AppLayout: FC = () => (
+  <AppWrapper>
+    <AppBar />
+    <AppBody>
+      <Outlet />
+    </AppBody>
+    <AppBasement />
+  </AppWrapper>
+);
 
 export default AppLayout;

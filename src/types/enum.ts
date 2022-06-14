@@ -9,3 +9,8 @@ export enum RequestStatus {
   SUCCEEDED = "SUCCEEDED",
   FAILED = "FAILED",
 }
+
+export enum LangType {
+  EN = "EN",
+  UA = "UA",
+}

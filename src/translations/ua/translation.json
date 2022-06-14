@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "home": {
+      "title": "Вітаємо у Holy pizza",
+      "description": "Найсмачніше піцца у нас"
+    },
+    "notFound": {
+      "title": "404",
+      "description": "Сторінку не знайдено"
+    }
+  },
+  "components": {},
+  "pages": {
+    "home": {
+      "copyright": "Copyright ©",
+      "rights": "Всі права захищено"
+    },
+    "not_found": {
+      "message": "Sorry, this page does not exist",
+      "redirect": "You will be redirected to home page in 5 seconds"
+    }
+  },
+  "errorMessages": {}
+}

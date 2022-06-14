@@ -10,6 +10,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./redux/store";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import "translations/config";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,

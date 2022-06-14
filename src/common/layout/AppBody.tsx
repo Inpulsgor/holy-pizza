@@ -11,8 +11,6 @@ const Main = styled.main`
   background-color: #f5f6f8;
 `;
 
-const AppBody: FC<AppBodyProps> = ({ children }) => {
-  return <Main>{children}</Main>;
-};
+const AppBody: FC<AppBodyProps> = ({ children }) => <Main>{children}</Main>;
 
 export default AppBody;

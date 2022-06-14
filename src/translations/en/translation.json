@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "home": {
+      "title": "Welcome to Holy pizza",
+      "description": "Home page description"
+    },
+    "notFound": {
+      "title": "404",
+      "description": "Page not found"
+    }
+  },
+  "components": {},
+  "pages": {
+    "home": {
+      "copyright": "Copyright ©",
+      "rights": "All Rights Reserved"
+    },
+    "not_found": {
+      "message": "Sorry, this page does not exist",
+      "redirect": "You will be redirected to home page in 5 seconds"
+    }
+  },
+  "errorMessages": {}
+}
