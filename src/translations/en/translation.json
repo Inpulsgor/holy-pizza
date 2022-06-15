@@ -1,7 +1,15 @@
 {
   "meta": {
     "home": {
-      "title": "Welcome to Holy pizza",
+      "title": "Holy-Pizza caffe",
+      "description": "Home page description"
+    },
+    "cart": {
+      "title": "Holy-Pizza cart",
+      "description": "Home page description"
+    },
+    "product": {
+      "title": "Holy-Pizza product",
       "description": "Home page description"
     },
     "notFound": {
@@ -9,16 +17,18 @@
       "description": "Page not found"
     }
   },
-  "components": {},
   "pages": {
     "home": {
       "copyright": "Copyright ©",
       "rights": "All Rights Reserved"
     },
+    "cart": {},
+    "product": {},
     "not_found": {
       "message": "Sorry, this page does not exist",
       "redirect": "You will be redirected to home page in 5 seconds"
     }
   },
+  "components": {},
   "errorMessages": {}
 }

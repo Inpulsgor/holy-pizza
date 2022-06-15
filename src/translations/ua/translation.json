@@ -1,24 +1,34 @@
 {
   "meta": {
     "home": {
-      "title": "Вітаємо у Holy pizza",
-      "description": "Найсмачніше піцца у нас"
+      "title": "Holy-Pizza кафе",
+      "description": "Найсмачніше піцца y нас"
+    },
+    "cart": {
+      "title": "Holy-pizza корзина",
+      "description": "Home page description"
+    },
+    "product": {
+      "title": "Holy-pizza товари",
+      "description": "Home page description"
     },
     "notFound": {
       "title": "404",
       "description": "Сторінку не знайдено"
     }
   },
-  "components": {},
   "pages": {
     "home": {
       "copyright": "Copyright ©",
       "rights": "Всі права захищено"
     },
+    "cart": {},
+    "product": {},
     "not_found": {
-      "message": "Sorry, this page does not exist",
-      "redirect": "You will be redirected to home page in 5 seconds"
+      "message": "Упс, данна сторінка не існує",
+      "redirect": "Вас буде перенаправлено на головну сторінку на протязі 5 сек."
     }
   },
+  "components": {},
   "errorMessages": {}
 }

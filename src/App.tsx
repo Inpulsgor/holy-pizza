@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Loader } from "common/components";
 import { AppLayout } from "common/layout";
 import { useLoader } from "common/hooks";
-import { ROUTES, HomePage, ProductPage, CartPage, NotFoundPage } from "routes";
+import { ROUTES, HomePage, ProductPage, CartPage, UnfoundPage } from "routes";
 
 const App: FC = () => {
   const { isLoading } = useLoader();
@@ -16,8 +16,8 @@ const App: FC = () => {
             <Route index element={<HomePage />} />
             <Route path={ROUTES.PRODUCT} element={<ProductPage />} />
             <Route path={ROUTES.CART} element={<CartPage />} />
-            <Route path={ROUTES.NOT_FOUND} element={<NotFoundPage />} />
           </Route>
+          <Route path={ROUTES.UNFOUND} element={<UnfoundPage />} />
         </Routes>
       </Suspense>
 

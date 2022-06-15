@@ -2,9 +2,9 @@ import { lazy } from "react";
 
 export enum ROUTES {
   HOME = "/",
-  PRODUCT = "/product",
-  CART = "/cart",
-  NOT_FOUND = "*",
+  PRODUCT = "product",
+  CART = "cart",
+  UNFOUND = "*",
 }
 
 export const HomePage = lazy(
@@ -19,6 +19,6 @@ export const CartPage = lazy(
   () => import("pages/Cart" /* webpackChunkName: "CartPage" */),
 );
 
-export const NotFoundPage = lazy(
-  () => import("pages/NotFound" /* webpackChunkName: "NotFoundPage" */),
+export const UnfoundPage = lazy(
+  () => import("pages/Unfound" /* webpackChunkName: "UnfoundPage" */),
 );

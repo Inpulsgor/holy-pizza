@@ -8,7 +8,7 @@ interface AppBodyProps {
 const Main = styled.main`
   grid-area: main;
   border-radius: 10px;
-  background-color: #f5f6f8;
+  background-color: #fff;
 `;
 
 const AppBody: FC<AppBodyProps> = ({ children }) => <Main>{children}</Main>;

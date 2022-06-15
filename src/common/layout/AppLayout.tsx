@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Outlet } from "react-router-dom";
 import { AppBar, AppBody, AppBasement } from "common/layout";
+import { Header } from "common/components";
 import styled from "styled-components";
 
 const AppWrapper = styled.div`
@@ -18,9 +19,9 @@ const AppWrapper = styled.div`
   @media (min-width: 768px) {
     grid-template-columns: auto minmax(320px, 1200px) auto;
     grid-template-areas:
-      ". header header ."
-      ". main main ."
-      ". footer footer .";
+      ". header ."
+      ". main ."
+      ". footer .";
   }
 `;
 
@@ -28,6 +29,7 @@ const AppLayout: FC = () => (
   <AppWrapper>
     <AppBar />
     <AppBody>
+      <Header />
       <Outlet />
     </AppBody>
     <AppBasement />

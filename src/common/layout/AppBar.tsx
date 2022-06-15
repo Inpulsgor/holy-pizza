@@ -4,6 +4,7 @@ import { ThemeToggle, LangSelect } from "common/components";
 
 const Header = styled.header`
   grid-area: header;
+  display: flex;
   padding: 10px 0;
 `;
 
