@@ -1,14 +1,25 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import { PizzaParams, Pizza } from "entities/pizza/model/model";
 import { getPizzas } from "entities/pizza/api/api";
-import { Pizza, PizzaParams } from "entities/pizza/model/model";
-// import pickBy from "lodash/pickBy";
-// import identity from "lodash/identity";
 
 export const fetchPizzas = createAsyncThunk<Pizza[], PizzaParams>(
-  "pizza/fetchPizzas",
+  "pizza/fetchPizzasStatus",
   async params => {
-    const response = await getPizzas(params);
+    const { sortBy, order, category, search, currentPage } = params;
 
-    return response.data;
+    const credentials = {
+      params: {
+        page: currentPage,
+        limit: 4,
+        category,
+        sortBy,
+        order,
+        search,
+      },
+    };
+
+    const { data } = await getPizzas(credentials);
+
+    return data;
   },
 );

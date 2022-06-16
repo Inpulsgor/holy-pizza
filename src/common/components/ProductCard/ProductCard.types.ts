@@ -1,5 +1,5 @@
 import { PizzaItem } from "models/pizza";
 
-export interface PizzaCardProps {
+export interface ProductCardProps {
   product: PizzaItem;
 }

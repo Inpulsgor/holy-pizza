@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as CrossIcon } from "assets/icons/plus.svg";
+import { UAH } from "common/static/const";
 import {
   Card,
   Image,
@@ -13,43 +14,39 @@ import {
   Controls,
   Price,
   AddToCart,
+  ButtonText,
   Quantity,
 } from "./ProductCard.styles";
-import { PizzaCardProps } from "./ProductCard.types";
+import { ProductCardProps } from "./ProductCard.types";
 
-const PizzaCard: FC<PizzaCardProps> = ({
-  product: {
-    id,
-    title,
-    price,
-    imageUrl = "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    sizes = [],
-    types = [],
-  },
+const ProductCard: FC<ProductCardProps> = ({
+  product: { id, title, price, imageUrl, sizes = [], types = [] },
 }) => {
   return (
     <Card>
-      <Link key={id} to={`/pizza/${id}`}>
+      <Link key={id} to={`product/${id}`}>
         <Image src={imageUrl} alt="pizza image" />
         <Title>{title}</Title>
       </Link>
       <Properties>
         <Thickness>
-          {types.map(size => (
-            <ThicknessItem>{size}</ThicknessItem>
+          {types.map(type => (
+            <ThicknessItem key={type}>{type}</ThicknessItem>
           ))}
         </Thickness>
         <Sizes>
           {sizes.map(size => (
-            <SizeItem>{size}</SizeItem>
+            <SizeItem key={size}>{size}</SizeItem>
           ))}
         </Sizes>
       </Properties>
       <Controls>
-        <Price>{price}</Price>
+        <Price>
+          {price} {UAH}
+        </Price>
         <AddToCart>
           <CrossIcon />
-          Add
+          <ButtonText>Add</ButtonText>
           <Quantity>3</Quantity>
         </AddToCart>
       </Controls>
@@ -57,4 +54,4 @@ const PizzaCard: FC<PizzaCardProps> = ({
   );
 };
 
-export default PizzaCard;
+export default ProductCard;

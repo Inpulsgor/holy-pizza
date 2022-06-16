@@ -1,6 +1,10 @@
 import { FC } from "react";
 import { Helmet } from "react-helmet-async";
-import { ProductList } from "common/components";
+import {
+  Filters,
+  ProductList,
+  // Pagination
+} from "common/components";
 import { useTranslation } from "react-i18next";
 
 const Home: FC = () => {
@@ -13,7 +17,9 @@ const Home: FC = () => {
         <meta name="description" content={t("meta.home.description")} />
       </Helmet>
 
+      <Filters />
       <ProductList />
+      {/* <Pagination /> */}
     </>
   );
 };

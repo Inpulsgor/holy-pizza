@@ -56,4 +56,4 @@ export const {
   setSearchValue,
 } = filterSlice.actions;
 
-export default filterSlice.reducer;
+export default filterSlice;

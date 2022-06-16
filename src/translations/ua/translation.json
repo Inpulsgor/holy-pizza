@@ -1,7 +1,7 @@
 {
   "meta": {
     "home": {
-      "title": "Holy-Pizza кафе",
+      "title": "Holy-Pizza",
       "description": "Найсмачніше піцца y нас"
     },
     "cart": {
@@ -20,12 +20,12 @@
   "pages": {
     "home": {
       "copyright": "Copyright ©",
-      "rights": "Всі права захищено"
+      "rights": "Усі піцци захищено"
     },
     "cart": {},
     "product": {},
     "not_found": {
-      "message": "Упс, данна сторінка не існує",
+      "message": "Упс, схоже що данної сторінки не існує",
       "redirect": "Вас буде перенаправлено на головну сторінку на протязі 5 сек."
     }
   },

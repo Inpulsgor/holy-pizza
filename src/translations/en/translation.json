@@ -1,16 +1,16 @@
 {
   "meta": {
     "home": {
-      "title": "Holy-Pizza caffe",
+      "title": "Holy-Pizza",
       "description": "Home page description"
     },
     "cart": {
       "title": "Holy-Pizza cart",
-      "description": "Home page description"
+      "description": "Cart page description"
     },
     "product": {
       "title": "Holy-Pizza product",
-      "description": "Home page description"
+      "description": "Product page description"
     },
     "notFound": {
       "title": "404",
@@ -20,7 +20,7 @@
   "pages": {
     "home": {
       "copyright": "Copyright ©",
-      "rights": "All Rights Reserved"
+      "rights": "All Pizzas Reserved"
     },
     "cart": {},
     "product": {},

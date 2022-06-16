@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  width: 280px;
-  text-align: center;
-  margin-bottom: 65px;
   transition: all 0.2s ease-in-out;
   background-color: transparent;
 
@@ -13,12 +10,15 @@ export const Card = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 260px;
+  margin-bottom: 10px;
 `;
 
 export const Title = styled.span`
+  display: block;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: center;
   letter-spacing: 1%;
   margin-bottom: 20px;
 `;
@@ -43,6 +43,7 @@ export const ThicknessItem = styled.li`
   font-weight: 600;
   font-size: 14px;
   @include noselect();
+
   &.active {
     background: #ffffff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
@@ -86,4 +87,7 @@ export const Price = styled.span`
 `;
 
 export const AddToCart = styled.button``;
+
+export const ButtonText = styled.span``;
+
 export const Quantity = styled.span``;

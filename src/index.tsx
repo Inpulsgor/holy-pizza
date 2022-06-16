@@ -7,7 +7,7 @@ import { GlobalStyle } from "common/styles/global";
 import { theme } from "common/styles/theme";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import store, { persistor } from "./redux/store";
+import { store, persistor } from "./redux/store"; // persistor
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import "translations/config";

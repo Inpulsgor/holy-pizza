@@ -1,12 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { PizzaState, Pizza } from "entities/pizza/model/model";
 import { fetchPizzas } from "entities/pizza/redux/pizzaOperations";
-import { AppState } from "redux/store";
 import { RequestStatus } from "types/enum";
 
 const initialState: PizzaState = {
   items: [],
-  status: RequestStatus.IDLE,
+  status: RequestStatus.IDLE, // IDLE | PENDING | SUCCEEDED | FAILED
 };
 
 const pizzaSlice = createSlice({
@@ -33,8 +32,6 @@ const pizzaSlice = createSlice({
     });
   },
 });
-
-export const selectPizzaData = (state: AppState) => state.pizza;
 
 export const { setItems } = pizzaSlice.actions;
 

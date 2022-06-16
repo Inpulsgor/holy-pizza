@@ -2,7 +2,7 @@ import { lazy } from "react";
 
 export enum ROUTES {
   HOME = "/",
-  PRODUCT = "product",
+  PRODUCT = "product/:id",
   CART = "cart",
   UNFOUND = "*",
 }

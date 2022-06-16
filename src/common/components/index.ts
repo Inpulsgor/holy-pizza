@@ -1,11 +1,14 @@
 export { default as Logo } from "./Logo/Logo";
 export { default as Loader } from "./Loader/Loader";
 export { default as Header } from "./Header/Header";
+export { default as Filters } from "./Filters/Filters";
 export { default as NotFound } from "./NotFound/NotFound";
 export { default as SearchBar } from "./SearchBar/SearchBar";
 export { default as EmptyCart } from "./EmptyCart/EmptyCart";
+export { default as Categories } from "./Categories/Categories";
 export { default as LangSelect } from "./LangSelect/LangSelect";
 export { default as CartButton } from "./CartButton/CartButton";
+export { default as Pagination } from "./Pagination/Pagination";
 export { default as ThemeToggle } from "./ThemeToggle/ThemeToggle";
 export { default as ProductCard } from "./ProductCard/ProductCard";
 export { default as ProductList } from "./ProductList/ProductList";
